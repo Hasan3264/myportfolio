@@ -1,0 +1,129 @@
+@import "../variables/fontfamily";
+@import "../variables/transation";
+@import "../mixinit/fontStyle";
+
+#footer {
+    margin: 40px;
+    background-color: rgb(250, 250, 250);
+    box-shadow: 5px 5px 5px #4d4d4d86, -5px -5px 5px #7474749d;
+    border-radius: 10px;
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+
+    .footer_start {
+
+        .card {
+            margin-top: 20px !important;
+
+            .card-header {
+                margin-top: 10px !important;
+                border-radius: 6px;
+                -webkit-border-radius: 6px;
+                -moz-border-radius: 6px;
+                -ms-border-radius: 6px;
+                -o-border-radius: 6px;
+                box-shadow: 5px 5px 0px #d1d9e6, -5px -5px 0px #d1d9e6;
+
+                h5 {
+                    @include fontstyle($popins, 20px, 400, rgb(0, 0, 0));
+                }
+            }
+
+            .card-body {
+                margin-top: 20px !important;
+
+                ul {
+                    li {
+                        a {
+                            transition: all linear .3s;
+                            -webkit-transition: all linear .3s;
+                            -moz-transition: all linear .3s;
+                            -ms-transition: all linear .3s;
+                            -o-transition: all linear .3s;
+                            transform: scale(1);
+                            -webkit-transform: scale(1);
+                            -moz-transform: scale(1);
+                            -ms-transform: scale(1);
+                            -o-transform: scale(1);
+                            @include fontstyle($popins, 15px, 400, rgb(0, 0, 0));
+
+                            i {
+                                margin-right: 5px;
+                            }
+
+                            &:hover {
+                                transform: scale(1.2);
+                                -webkit-transform: scale(1.2);
+                                -moz-transform: scale(1.2);
+                                -ms-transform: scale(1.2);
+                                -o-transform: scale(1.2);
+                                color: rgba(255, 0, 0, 0.363);
+}
+                        }
+
+                        margin-bottom: 10px;
+
+                    }
+                }
+
+                .lastend {
+                    span:last-child {
+                        a {
+                            transform: scale(1);
+                            -webkit-transform: scale(1);
+                            -moz-transform: scale(1);
+                            -ms-transform: scale(1);
+                            -o-transform: scale(1);
+                        }
+
+                        &:hover {
+                            a {
+                                transform: scale(1.5);
+                                -webkit-transform: scale(1.5);
+                                -moz-transform: scale(1.5);
+                                -ms-transform: scale(1.5);
+                                -o-transform: scale(1.5);
+                                color: #000;
+                            }
+
+                        }
+                    }
+
+                    a {
+                        @include fontstyle($popins, 15px, 400, rgb(0, 0, 0));
+                        transition: all linear .3s;
+                        -webkit-transition: all linear .3s;
+                        -moz-transition: all linear .3s;
+                        -ms-transition: all linear .3s;
+                        -o-transition: all linear .3s;
+
+                        &:hover {
+                            color: rgba(255, 0, 0, 0.363);
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+    
+        .back-to-top {
+            width: 40px;
+            height: 40px;
+            color: #fff;
+            font-size: 20px;
+            line-height: 40px;
+            text-align: center;
+            border: 1px solid #fff;
+            background: red;
+            position: fixed;
+            right: 30px;
+            bottom: 40px;
+            z-index: 999;
+            cursor: pointer;
+         }
+    
+}

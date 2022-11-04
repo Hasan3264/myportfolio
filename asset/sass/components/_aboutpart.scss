@@ -1,0 +1,112 @@
+@import "../variables/fontfamily";
+@import "../variables/transation";
+@import "../mixinit/fontStyle";
+#about{
+    margin-top: 60px;
+    
+    .about_content{
+        background-color: #f1f1f1;
+        box-shadow: 10px 10px 5px #d1d9e6 ,-10px -10px 0px #d1d9e6;
+        
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        height:  275px;
+        display: flex;
+        align-items: center;
+        p{
+            padding: 23px 55px;
+            @include fontstyle($popins, 18px, 300,var(--primary-color));
+            span{
+                margin-top: 18px;
+                display: inline-block;
+            }
+        }
+    }
+    .mypic{
+        position: relative;
+        .pic{
+            z-index: 999;
+            height: 410px;
+           position: relative;
+           left: 50%;
+           top: -126px;
+           transform: translate(-50%);
+           -webkit-transform: translate(-50%);
+           -moz-transform: translate(-50%);
+           -ms-transform: translate(-50%);
+           -o-transform: translate(-50%);
+       }
+       &::after{
+        z-index: -2;
+        position: absolute;
+        left: 210px;
+        top: -16px;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        content: " ";
+        width: 280px;
+        height: 280px;
+        background: #d1d9e6;
+     }
+       &::before{
+        z-index: 99;
+        position: absolute;
+        left: 220px;
+        top: -5px;
+        border-radius: 30px;
+        -webkit-border-radius: 30px;
+        -moz-border-radius: 30px;
+        -ms-border-radius: 30px;
+        -o-border-radius: 30px;
+        content: " ";
+        width: 280px;
+        height: 280px;
+        background: #fff;
+        box-shadow: 10px 10px 0px #d1d9e6,
+     }
+//     @keyframes backgroundanimetion {
+//         0%{
+//             border-radius: 5%;
+//             -webkit-border-radius: 5%;
+//             -moz-border-radius: 5%;
+//             -ms-border-radius: 5%;
+//             -o-border-radius: 5%;
+// }
+//         25%{
+//             border-radius: 10%;
+//             -webkit-border-radius: 10%;
+//             -moz-border-radius: 10%;
+//             -ms-border-radius: 10%;
+//             -o-border-radius: 10%;
+//        }
+//         50%{
+//             border-radius: 20%;
+//             -webkit-border-radius: 20%;
+//             -moz-border-radius: 20%;
+//             -ms-border-radius: 20%;
+//             -o-border-radius: 20%;
+//       }
+//         75%{
+//             border-radius: 25%;
+//             -webkit-border-radius: 25%;
+//             -moz-border-radius: 25%;
+//             -ms-border-radius: 25%;
+//             -o-border-radius: 25%;
+//       }
+//         75%{
+//             border-radius: 35%;
+//             -webkit-border-radius: 35%;
+//             -moz-border-radius: 35%;
+//             -ms-border-radius: 35%;
+//             -o-border-radius: 35%;
+// }
+    // }
+    }
+  
+}

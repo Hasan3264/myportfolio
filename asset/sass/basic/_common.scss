@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@100;200;300;400;500;600;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul,ol,h1,h2,h3,h4,h5,h6,p{
+   margin: 0;
+   padding: 0;
+}
+:root{
+  --primary-color: rgb(0, 0, 0);
+  --background-color: #fff;
+}
+.dark-theme{
+  --primary-color: #fff;
+  --background-color: #000;
+}
+
