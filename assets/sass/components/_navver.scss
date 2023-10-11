@@ -12,7 +12,7 @@
 }
 #navver {
     line-height: 40px;
-    background-color: #000;
+    background-color: #000000;
     position: absolute;
     left: 0;
     right: 0;
@@ -27,7 +27,7 @@
             a {
                 padding: 0;
                 margin: 0px 15px;
-                @include fontstyle($popins, 16px, 400, #ffffffb7);
+                @include fontstyle($popins, 16px, 400, #ffffff);
                 transition: all linear .6s;
                 -webkit-transition: all linear .6s;
                 -moz-transition: all linear .6s;

@@ -1,0 +1,39 @@
+@media (max-width: 578.99px){
+    .element {
+        height: 40px !important;
+      }
+    #header .content span h1 {
+        font-size: 40px !important;
+    } 
+    #skills {
+        margin-top: 40px !important;
+      }
+    #about .mypic{
+        display: none !important;
+    }
+       
+    #footer .footer_start .card .card-body .lastend span:last-child:hover a {
+        transform: scale(1.1) !important;
+        -webkit-transform: scale(1.1) !important;
+        -moz-transform: scale(1.1) !important;
+        -ms-transform: scale(1.1) !important;
+        -o-transform: scale(1.1) !important;
+        color: #000;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px) {
+    #about .mypic{
+        display: none !important;
+    }
+    #skills {
+        margin-top: 40px !important;
+      }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    #about .mypic{
+        display: none !important;
+    }
+    #skills {
+        margin-top: 40px !important;
+      }
+}
